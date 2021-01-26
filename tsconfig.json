@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "noImplicitAny": false, // 是否在表达式和声明上有隐含的any类型时报错
-    "experimentalDecorators": true,
+    "experimentalDecorators": true,//装饰器语法是es7的，不设置ts允许装饰器语法的话代码里会提示警告。
+    // 除了注释的两项，其他的是默认的配置。
     "target": "es5",
     "lib": [
       "dom",
