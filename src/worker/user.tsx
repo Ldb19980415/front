@@ -1,6 +1,20 @@
+import { makeAutoObservable } from "mobx";
 class User {
-    isLogin = true
+  //public implements UserInterface
+
+  constructor() {
+    makeAutoObservable(this);
+  }
+  isLogin = false;
+
+  login() {
+    //调用登录的接口
+    this.isLogin = true;
+  }
+  logout() {
+    // 调用退出接口
+    this.isLogin = false;
+  }
 }
 
-const user = new User()
-export default user
+export default new User();
