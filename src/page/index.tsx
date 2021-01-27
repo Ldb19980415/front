@@ -2,26 +2,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import { Layout } from "antd";
 import Home from "./Home";
-const { Sider, Content, Header } = Layout;
+import { Icon,IconTypes } from "../component";
+import s from "./index.module.scss";
 export default class Page extends React.Component {
   render() {
-    console.log(process.env);
-
     return (
-      <div>
-        <Layout>
-          <Sider>侧边</Sider>
-          <Layout>
-            <Header>dingskajdahdlkajkh</Header>
-            <Content>内容</Content>
-          </Layout>
-        </Layout>
-
-        {/* <Router>
-        <Switch>
-            <Route path='/home'  component={Home} exact />
-        </Switch>
-        </Router> */}
+      <div className={s["container"]}>
+        <div className={s["fixedHeader"]}><Icon size={40} type={IconTypes.iconcash}/></div>
+        <div className={s["contentBox"]}>
+          <div className={s["sider"]}></div>
+          <div className={s["content"]}></div>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-
 import worker from "./worker";
 import LoginPage from "./page/Login";
 import LayoutPage from "./page";

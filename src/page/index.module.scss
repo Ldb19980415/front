@@ -1,0 +1,29 @@
+.container{
+    position: relative;
+    .fixedHeader{
+        height: 56px;
+        width: 100%;
+        background-color: yellow;
+        position: fixed;
+    }
+    .contentBox{
+        padding-top: 72px;
+        .sider{
+            position: fixed;
+            top:72px;
+            left: 0;
+            width: 200px;
+            height: calc(100vh - 72px);
+            overflow: auto;
+            background-color: aqua;
+        }
+        .content{
+            margin-left: 216px;
+            min-height: calc(100vh - 72px);
+            width: calc(100% - 216px);
+            background-color: yellowgreen;
+            min-width: 1000px;
+        }
+
+    }
+}
