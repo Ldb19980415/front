@@ -1,14 +1,19 @@
 import React from "react";
-// import worker from "./worker";
 import LoginPage from "./page/Login";
 import LayoutPage from "./page";
-import { Button } from "antd";
 import { inject, observer } from "mobx-react";
-// import {Provider} from 'mobx-react'
+// import { InjectedIntlProps } from 'umi'
+import "./App.scss";
+
+interface Iprops {
+  user?:any
+} 
 @inject("user")
 @observer
-export default class App extends React.Component<any, any> {
+export default class App extends React.Component<Iprops , any> {
   render() {
+    console.log(this.props);
+    
     return (
       <div>{this.props.user.isLogin ? <LayoutPage /> : <LoginPage />}</div>
     );

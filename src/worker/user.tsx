@@ -1,15 +1,18 @@
 import { makeAutoObservable } from "mobx";
-class User {
-  //public implements UserInterface
 
+class User {
   constructor() {
     makeAutoObservable(this);
   }
-  isLogin = false;
+  isLogin = true;
 
-  login() {
+  login(params: any) {
     //调用登录的接口
-    this.isLogin = true;
+    if (params.username === "admin" && params.password === "123456") {
+      this.isLogin = true;
+      return true;
+    }
+    return false;
   }
   logout() {
     // 调用退出接口
