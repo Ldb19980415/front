@@ -16,13 +16,8 @@ export default class Login extends React.Component<any, any> {
   @observable loading: boolean = false;
 
   formRef = React.createRef<FormInstance>();
-  clickLogin = (values: any) => {
-    let  res =  this.props.user.login(values);
-    if(res){
-      console.log('登录成功');
-    }else{
-      console.log('登录失败');
-    }
+  clickLogin = async(values: any) => {
+    await this.props['user'].login(values)
   };
   render() {
     return (

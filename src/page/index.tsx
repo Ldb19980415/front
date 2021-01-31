@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { parsePath } from "history";
 import React from "react";
 import Home from "./Home";
-import { Icon, IconTypes } from "../component";
 import s from "./index.module.scss";
 import MenuView from "../component/MenuView";
 import useAntd from "./userAntd";
 import { observer } from "mobx-react";
 import ButtonUse from "./userAntd/ButtonUse";
+import Header from './Header'
 const routes = {
   "/home": Home,
   ...useAntd,
@@ -31,7 +30,8 @@ export default class Page extends React.Component {
       <div className={s["container"]}>
         <Router>
           <div className={s["fixedHeader"]}>
-            <Icon size={40} type={IconTypes.iconcash} />
+          <Header/>
+            
           </div>
           <div className={s["contentBox"]}>
             <div className={s["sider"]}>
