@@ -13,7 +13,7 @@ export default class Home extends React.Component<any, any> {
         onClick={() => {
           console.log('.....');
           
-          this.props.user.logout();
+          // this.props.user.logout();
         }}
       >
         改变专改
