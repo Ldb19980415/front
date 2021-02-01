@@ -17,5 +17,17 @@ const menus = [
       },
     ],
   },
+  {
+    key:'game',
+    title:'小游戏',
+    icon:'',
+    children:[
+      {
+        key:'/game/snack',
+        title:'贪吃蛇',
+        icon:'',
+      }
+    ]
+  }
 ];
 export default menus;

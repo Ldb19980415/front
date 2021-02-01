@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 96px);
+    .map{
+        background-color: yellowgreen;
+        width: 900px;
+        height: 600px;
+        position: relative;
+        .startGame{
+            position: absolute;
+            left: 0;
+            top: -36px;
+        }
+        .stopGame{
+            position: absolute;
+            left: 0;
+            top: -70px;
+        }
+        .gameLevel{
+            position: absolute;
+            left: 120px;
+            top: -36px;
+        }
+    }
+}

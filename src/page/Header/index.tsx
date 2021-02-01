@@ -17,11 +17,11 @@ export default class Header extends React.Component<any,Istate> {
         timer:undefined
     }
     componentDidMount(){
-        this.setState({timer: setInterval(()=>{
-            this.setState({
-                nowTime : new Date()
-            })
-        },1000)})
+        // this.setState({timer: setInterval(()=>{
+        //     this.setState({
+        //         nowTime : new Date()
+        //     })
+        // },1000)})
     }
     componentWillUnmount(){
         clearInterval(this.state.timer)
@@ -37,7 +37,7 @@ export default class Header extends React.Component<any,Istate> {
                 <div className={s['right']}>
                     <div>欢迎</div>
                     <div className={s['username']}>{this.props['user'].username}</div>
-                    <div>{moment(this.state.nowTime).format("YYYY-MM-DD hh:mm:ss")}</div>
+                    <div>{moment(this.state.nowTime).format("YYYY-MM-DD")}</div>
                 </div>
             </div>
         )

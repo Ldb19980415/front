@@ -15,13 +15,13 @@
             width: 200px;
             height: calc(100vh - 72px);
             overflow: auto;
-            // background-color: aqua;
         }
         .content{
             margin-left: 216px;
             min-height: calc(100vh - 72px);
             width: calc(100% - 216px);
-            background-color: yellowgreen;
+            border: 2px solid yellowgreen;
+            padding:10px;
             min-width: 1000px;
         }
 
