@@ -105,6 +105,7 @@ export default class Snack extends React.Component {
           snack.reset();
         }, 1000);
         clearInterval(this.state.timer);
+        return
       }
       console.log(nextPoint.x, nextPoint.y, "food");
       console.log(snack.header.x, snack.header.y, "header");
