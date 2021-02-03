@@ -3,7 +3,7 @@ import React from "react";
 import { createFromIconfontCN } from "@ant-design/icons";
 import { IconFontProps } from "@ant-design/icons/lib/components/IconFont";
 const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_2351539_520ip7p5nbn.js",
+  scriptUrl: "//at.alicdn.com/t/font_2351539_njb0t6rcbm9.js",
 });
 
 interface IProps extends IconFontProps {

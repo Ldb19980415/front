@@ -3,6 +3,8 @@ const iconTypes = {
     icon084tuichu:'icon084tuichu',
     iconxueshengzheng2x:'iconxueshengzheng2x',
     icongistuceng:'icongistuceng',
-    iconcash:'iconcash'
+    iconcash:'iconcash',
+    iconxiajiang:'iconxiajiang',
+    iconshangsheng:'iconshangsheng'
 }
 export default iconTypes
