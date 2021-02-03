@@ -19,6 +19,21 @@ const menus = [
         key:'/useAntd/useIcon',
         title: "Icon",
         icon : ''
+      },
+      {
+        key:'/useAntd/useTypography',
+        title:"Typography",
+        icon:''
+      },
+      {
+        key:'/useAntd/useDivider',
+        title:"Divider",
+        icon:''
+      },
+      {
+        key:'/useAntd/useGrid',
+        title:'Grid',
+        icon:''
       }
     ],
   },

@@ -1,8 +1,10 @@
 import React from "react";
-
 import s from "./index.module.scss";
 
+
+
 interface Iprops {}
+
 
 const data = [
   {
@@ -25,15 +27,15 @@ const data = [
   {
     title:'自定义Icon接受的属性：',
     children:[
-      "className",
-      "fill,svg的填充色",
+      "className: ",
+      "fill:  svg的填充色",
       "height:string|number ,默认为1em",
       "style:css",
       "width:string|number,默认为1em  svg的宽度"
     ]
   }
 ];
-export default class IconUse extends React.Component<any, any> {
+export default class TypographyUse extends React.Component<any, any> {
   render() {
     return (
       <div className={s["container"]}>
