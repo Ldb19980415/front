@@ -32,7 +32,7 @@ class User {
       method: method,
       cache: 'no-cache',
       headers: {
-        Authorization: this.token,
+        Authorization: this.token,    //直接没次去localhost里面读token保证最新的token
       },
     }
     let url = host_api[api]

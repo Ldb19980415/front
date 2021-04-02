@@ -12,7 +12,8 @@ interface Iprops {
 export default class App extends React.Component<Iprops , any> {
   render() {
     return (
-      <div>{this.props.user.isLogin === 'true' ? <LayoutPage /> : <LoginPage />}</div>
+      // <div>{this.props.user.isLogin === 'true' ? <LayoutPage /> : <LoginPage />}</div>
+      <LayoutPage /> 
     );
   }
 }

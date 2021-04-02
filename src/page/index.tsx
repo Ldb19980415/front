@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {  Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
 import s from "./index.module.scss";
@@ -7,12 +7,19 @@ import useAntd from "./userAntd";
 import { observer } from "mobx-react";
 import Header from "./Header";
 import game from "./game";
+import d3Learn from "./d3Learn";
+import useHook from "./useHook";
+import other from "./other";
 import RecordWeight from './RecordWeight'
+import {browserHistory} from './browserHistory'
 const routes = {
   "/home": Home,
   '/sunjie':RecordWeight,
   ...useAntd,
   ...game,
+  ...d3Learn,
+  ...useHook,
+  ...other
 };
 
 const appRouter = () => {
@@ -30,7 +37,7 @@ export default class Page extends React.Component {
   render() {
     return (
       <div className={s["container"]}>
-        <Router>
+        <Router history={browserHistory}>
           <div className={s["fixedHeader"]}>
             <Header />
           </div>

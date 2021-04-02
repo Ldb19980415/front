@@ -48,6 +48,18 @@ const menus = [
         icon:'',
       }
     ]
+  },
+  {
+    key:'d3learn',
+    title:'学习d3使用',
+    icon:'',
+    children:[
+      {
+        key:'/d3learn/hellod3',
+        title:'hello d3',
+        icon:''
+      }
+    ]
   }
 ];
 export default menus;
